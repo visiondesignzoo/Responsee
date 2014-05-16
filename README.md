@@ -1,7 +1,7 @@
 # [Responsee](http://www.myresponsee.com)
 Lightweight, more intuitive and useful responsive CSS framework
 
-Responsee is an open source responsive CSS framework based on 12-column grid. Websites based on Responsee are fully responsive – they display content correctly on each type of devices. Besides basic CSS file also supplementary files of components are part of Responsee.
+Responsee is an open source responsive CSS framework based on 12-column grid. Websites based on Responsee are fully responsive – they display content correctly on each type of devices.
 
 ## Lightweight
 Minimum of code, great potential! Provided you look for something smaller, something lighter, something helping you to introduce project within a shorter time, Responsee is for you the right choice.
