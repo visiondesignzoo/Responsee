@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext');
 * {  
   -webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -8,7 +9,7 @@ body {
 	background:none repeat scroll 0 0 #d3d3d3;
 	font-size:100%;
 	margin:0;
-  font-family:tahoma;
+  font-family:open sans;
   color:#444;
   }
 h1, h2, h3, h4, h5, h6 {
@@ -183,7 +184,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 }
 .aside-nav ul ul a {padding:0.625em 1.25em;}
 .aside-nav li a:link, .aside-nav li a:visited {color:#333;}
-.aside-nav li li a:hover, .aside-nav li li.active-item a, .aside-nav li li.aside-sub-submenu li a:hover {
+.aside-nav li li a:hover, .aside-nav li li.active-item > a, .aside-nav li li.aside-sub-submenu li a:hover {
   color:#999;
   background:none;
 }
