@@ -19,16 +19,17 @@ jQuery(document).ready(function() {
     var content = '<span class="count-number"> ' + count + '</span>';
     $(element).closest('li').children('a').append(content);
   });
-  $('.top-nav > ul > li:has(ul)').addClass('submenu');
-  $('.top-nav > ul ul > li:has(ul)').addClass('sub-submenu');
-  $('.top-nav > ul > li.submenu > a').click(function() {  
-    $('.top-nav ul li.submenu:hover > ul').toggleClass('show-ul', 'slow'); 
+  $('.top-nav > ul li:has(ul)').addClass('submenu');
+  $('.top-nav > ul ul li:has(ul)').addClass('sub-submenu');
+  $('.top-nav > ul ul li:has(ul)').removeClass('submenu');
+  $('.top-nav > ul li.submenu > a').click(function() {  
+    $('.top-nav > ul li.submenu:hover > ul').toggleClass('show-ul', 'slow'); 
   }); 
   $('.top-nav > ul ul > li.sub-submenu > a').click(function() { 
-    $('.top-nav ul ul li:hover > ul').toggleClass('show-ul', 'slow');
+    $('.top-nav ul ul li:hover > ul').toggleClass('show-ul', 'slow');   
   });
   $('.nav-text').click(function() { 
-    $('.top-nav ul').toggleClass('show-menu', 'slow');
+    $('.top-nav > ul').toggleClass('show-menu', 'slow');
   }); 
   //Custom forms
   $(function() {
