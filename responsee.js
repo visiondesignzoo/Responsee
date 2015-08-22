@@ -7,10 +7,10 @@ jQuery(document).ready(function() {
   });
   $('.aside-nav > ul > li:has(ul)').addClass('aside-submenu');
   $('.aside-nav > ul ul > li:has(ul)').addClass('aside-sub-submenu'); 
-    $('.aside-nav > ul > li.aside-submenu > a').attr('aria-haspopup', 'true').click(function() {  
+    $('.aside-nav > ul > li.aside-submenu > a').click(function() {  
     $('.aside-nav ul li.aside-submenu:hover > ul').toggleClass('show-aside-ul', 'slow'); 
   }); 
-  $('.aside-nav > ul ul > li.aside-sub-submenu > a').attr('aria-haspopup', 'true').click(function() { 
+  $('.aside-nav > ul ul > li.aside-sub-submenu > a').click(function() { 
     $('.aside-nav ul ul li:hover > ul').toggleClass('show-aside-ul', 'slow');
   });
   //Responsee nav   
