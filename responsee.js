@@ -19,9 +19,11 @@ jQuery(document).ready(function() {
     var content = '<span class="count-number"> ' + count + '</span>';
     $(element).closest('li').children('a').append(content);
   });
-  $('.top-nav > ul li:has(ul)').addClass('submenu');
-  $('.top-nav > ul ul li:has(ul)').addClass('sub-submenu');
-  $('.top-nav > ul ul li:has(ul)').removeClass('submenu');
+  $('.top-nav > ul li:has(ul)')
+  .addClass('submenu');
+  $('.top-nav > ul ul li:has(ul)')
+  .addClass('sub-submenu')
+  .removeClass('submenu');
   $('.top-nav > ul li.submenu > a').click(function() {  
     $('.top-nav > ul li.submenu:hover > ul').toggleClass('show-ul', 'slow'); 
   }); 
@@ -66,16 +68,13 @@ jQuery(document).ready(function() {
   $('a').filter(function() {
     return this.href == url;
   }).parent('li').addClass('active-item');
-  var url = window.location.href;
   $('.aside-nav a').filter(function() {
     return this.href == url;
-  }).parent('li').parent('ul').addClass('active-aside-item');
-  var url = window.location.href;
-  $('.aside-nav a').filter(function() {
-    return this.href == url;
-  }).parent('li').parent('ul').parent('li').parent('ul').addClass('active-aside-item');
-  var url = window.location.href;
-  $('.aside-nav a').filter(function() {
-    return this.href == url;
-  }).parent('li').parent('ul').parent('li').parent('ul').parent('li').parent('ul').addClass('active-aside-item');
+  }).parent('li').parent('ul').addClass('active-aside-item')
+      .filter(function() {
+        return this.href == url;
+      }).parent('li').parent('ul').parent('li').parent('ul').addClass('active-aside-item')
+      .filter(function() {
+        return this.href == url;
+      }).parent('li').parent('ul').parent('li').parent('ul').parent('li').parent('ul').addClass('active-aside-item');
 });
