@@ -1,3 +1,50 @@
+/*
+ * Components CSS - v3 - 2015-08-22
+ * http://www.myresponsee.com
+ * Copyright 2015, Vision Design - graphic zoo
+ * Free to use under the MIT license.
+*/
+/* Tabs */
+.tab-item {
+  background: none repeat scroll 0 0 #fff;
+  display: none;
+  padding: 1.25em 0;
+}
+.tab-item.tab-active {
+  display: block;
+}
+.tab-content > .tab-label {
+  display: none;
+}
+.tab-nav > .tab-label {
+  float:left;
+}
+a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover {
+  background: none repeat scroll 0 0 #262626;
+  color: #fff;
+  margin-right: 1px;
+  padding: 0.625em 1.25em;
+  transition: background 0.20s linear 0s;
+  -o-transition: background 0.20s linear 0s;
+  -ms-transition: background 0.20s linear 0s;
+  -moz-transition: background 0.20s linear 0s;
+  -webkit-transition: background 0.20s linear 0s;
+}
+a.tab-label:hover,a.tab-label.active-btn {
+  background: none repeat scroll 0 0 #999;
+}
+.tab-label.active-btn {
+  cursor: default;
+}
+.tab-content {
+  text-align: left;
+}
+@media screen and (max-width:768px) {    
+  .tab-nav > .tab-label {
+    margin: 0.5px 0;
+    width: 100%;
+  }
+}
 /* Custom forms */
 form.customform input, form.customform select, form.customform textarea, form.customform button {
  font-size:0.9em;
@@ -38,9 +85,9 @@ form.customform option {padding: 0.625em;}
 form.customform select[multiple="multiple"] {height: auto;}
 form.customform button {
  width: 100%;
- background: none repeat scroll 0 0 #444444;
+ background: none repeat scroll 0 0 #444;
  border: 0 none;
- color: #FFFFFF;
+ color: #fff;
  height: 2.7em;
  padding: 0.625em;
  cursor:pointer;
@@ -51,7 +98,7 @@ form.customform button {
  -moz-transition: background 0.20s linear 0s;
  -webkit-transition: background 0.20s linear 0s;
 }	
-form.customform button:hover {background: none repeat scroll 0 0 #666666;}
+form.customform button:hover {background: none repeat scroll 0 0 #666;}
 /* Icon font - MFG labs */
 @font-face {
   font-family: 'mfg';
@@ -73,12 +120,12 @@ i, .icon {
 .icon2x {font-size: 2em;}
 .icon3x {font-size: 3em;}
 .gradient {
-  color: #999999;
+  color: #999;
   text-shadow: 1px 1px 1px rgba(27, 27, 27, 0.19);
   transition: all 0.1s ease-in-out 0s;
 }
 .gradient:hover, .gradient .current {
-  color: #EEEEEE;
+  color: #eee;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
 }
 .icon-cloud:before { content: "\2601"; }
